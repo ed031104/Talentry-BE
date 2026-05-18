@@ -6,15 +6,104 @@
     <projectFile profileName="https">TalentryBussinesCore/TalentryBussinesCore.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="065443b3-a2f1-4c9e-b586-24db55437f27" name="Changes" comment="" />
+    <list default="true" id="065443b3-a2f1-4c9e-b586-24db55437f27" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/AI/IIEmbeddingService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/AI/IMatchingService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/AI/IOllamaService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/AI/IResumeAnalyzer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/AI/ITemplateRecommendationService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Messaging/IEventDispatcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Messaging/IMessageConsumer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Messaging/IMessagePublisher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Notification/IRealtimeNotifier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/OCR/IOcerService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/OCR/IPdfExtractor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Persistence/IMatchAnalysisRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Persistence/IOutboxRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Persistence/IResumeAnalysisRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Persistence/IResumeRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Persistence/IUnitofwork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Persistence/IVacancyRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Scraping/IVacancyScraper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Abstractions/Vectorization/IEmbeddingRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Behaviors/LoggingBehavior.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Behaviors/PerformanceBehavior.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Behaviors/TransactionBehavior.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Behaviors/ValidationBehavior.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Common/Constants/CacheKeys.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Common/Constants/EventNames.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Common/Constants/QueueNames.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Common/Exceptions/BusinessRuleException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Common/Exceptions/NotFoundException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Common/Exceptions/ValidationException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Common/Extensions/ServiceCollectionExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Common/Models/ApiResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Common/Models/CursorPagination.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Common/Models/PaginatedResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/DependecyInjection/ApplicationServiceRegistration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TalentryBussinesCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TalentryBussinesCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net9.0/Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net9.0/Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/Debug/net9.0/Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/Debug/net9.0/Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infraestructure/Infraestructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Infraestructure/Infraestructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infraestructure/obj/Debug/net9.0/Infraestructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infraestructure/obj/Debug/net9.0/Infraestructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infraestructure/obj/Debug/net9.0/Infraestructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infraestructure/obj/Debug/net9.0/Infraestructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infraestructure/obj/Debug/net9.0/Infraestructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infraestructure/obj/Debug/net9.0/Infraestructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infraestructure/obj/Infraestructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infraestructure/obj/Infraestructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infraestructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infraestructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infraestructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infraestructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infraestructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infraestructure/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infraestructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infraestructure/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9e85a93ba239e4fa5b94c754799ba3fadf5102ef027ea6fed8a17def249f20/JsonDocument.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a6d7c3abd4bb25b143ddc7a36ea5f74afd9a85471a3df5ea5d0653fea102b/ControllerEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/AI/IIEmbeddingService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/AI/IMatchingService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/AI/IOllamaService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/AI/IResumeAnalyzer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/AI/ITemplateRecommendationService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Messaging/IEventDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Messaging/IMessageConsumer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Messaging/IMessagePublisher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Notification/IRealtimeNotifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/OCR/IOcerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/OCR/IPdfExtractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Persistence/IMatchAnalysisRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Persistence/IOutboxRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Persistence/IResumeAnalysisRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Persistence/IResumeRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Persistence/IUnitofwork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Persistence/IVacancyRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Scraping/IVacancyScraper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Abstractions/Vectorization/IEmbeddingRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Behaviors/LoggingBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Behaviors/PerformanceBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Behaviors/TransactionBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Behaviors/ValidationBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Common/Constants/CacheKeys.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Common/Constants/QueueNames.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Common/Exceptions/BusinessRuleException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Common/Exceptions/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Common/Exceptions/ValidationException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Common/Extensions/ServiceCollectionExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Common/Models/ApiResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Common/Models/CursorPagination.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/Common/Models/PaginatedResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Application/DependecyInjection/ApplicationServiceRegistration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/EmbeddingDocument.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/MatchAnalysis.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/ResumeAnalysis.cs" root0="FORCE_HIGHLIGHTING" />
@@ -22,27 +111,33 @@
     <setting file="file://$PROJECT_DIR$/Domain/VacancyDocument.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TalentryBussinesCore/Controller/ResumenController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3Drm3jY1uuvhbIi8bk0gK2smdZu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/edwin/RiderProjects/TalentryBussinesCore&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.TalentryBussinesCore: http">
     <configuration name="Analysis.Worker" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Analysis.Worker/Analysis.Worker.csproj" />
@@ -100,7 +195,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1779048367352</updated>
-      <workItem from="1779048367929" duration="5136000" />
+      <workItem from="1779048367929" duration="7670000" />
     </task>
     <servers />
   </component>
@@ -108,6 +203,17 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
