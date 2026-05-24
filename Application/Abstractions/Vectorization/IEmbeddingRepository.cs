@@ -1,6 +1,6 @@
 namespace Application.Abstractions.Vectorization;
 
-public class IEmbeddingRepository
+public interface IEmbeddingRepository
 {
     
 }

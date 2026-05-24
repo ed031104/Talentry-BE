@@ -1,6 +1,6 @@
 namespace Application.Abstractions.Persistence;
 
-public class IOutboxRepository
+public interface IOutboxRepository
 {
     
 }

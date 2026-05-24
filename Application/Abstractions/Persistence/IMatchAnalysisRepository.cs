@@ -1,6 +1,6 @@
 namespace Application.Abstractions.Persistence;
 
-public class IMatchAnalysisRepository
+public interface IMatchAnalysisRepository
 {
     
 }

@@ -7,30 +7,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Features\Matching\Commands\" />
-      <Folder Include="Features\Matching\DTOs\" />
-      <Folder Include="Features\Matching\Events\" />
-      <Folder Include="Features\Matching\Queries\" />
-      <Folder Include="Features\Realtime\Commands\" />
-      <Folder Include="Features\Realtime\Events\" />
-      <Folder Include="Features\Resume\Commands\AnalyzeResume\" />
-      <Folder Include="Features\Resume\Commands\GenerateResumeEmbeddings\" />
-      <Folder Include="Features\Resume\Commands\UploadResume\" />
-      <Folder Include="Features\Resume\DTOs\" />
-      <Folder Include="Features\Resume\Events\" />
-      <Folder Include="Features\Resume\Mappings\" />
-      <Folder Include="Features\Resume\Queries\GetResumeById\" />
-      <Folder Include="Features\Resume\Queries\GetResumeStatus\" />
-      <Folder Include="Features\Resume\Queries\SearchResumes\" />
-      <Folder Include="Features\Resume\Specifications\" />
-      <Folder Include="Features\Vacancy\Commands\" />
-      <Folder Include="Features\Vacancy\DTOs\" />
-      <Folder Include="Features\Vacancy\Events\" />
-      <Folder Include="Features\Vacancy\Queries\" />
+      <ProjectReference Include="..\Domain\Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+        <HintPath>..\..\..\.nuget\packages\microsoft.extensions.configuration.abstractions\9.0.15\lib\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+        <HintPath>..\..\..\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\9.0.0\lib\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

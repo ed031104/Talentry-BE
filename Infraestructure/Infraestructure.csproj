@@ -7,12 +7,47 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Context\" />
-      <Folder Include="Repository\" />
+      <Folder Include="AI\Ollama\Models\" />
+      <Folder Include="AI\Ollama\Prompting\PromptTemplates\" />
+      <Folder Include="BackgroundJobs\Extensions\" />
+      <Folder Include="BackgroundJobs\Scheduling\" />
+      <Folder Include="BackgroundJobs\Workers\" />
+      <Folder Include="Caching\Extensions\" />
+      <Folder Include="Caching\Redis\" />
+      <Folder Include="Configuration\DependecyInjection\" />
+      <Folder Include="Configuration\Enviroment\" />
+      <Folder Include="Monitoring\Logging\" />
+      <Folder Include="Monitoring\Metrics\" />
+      <Folder Include="Monitoring\Tracing\" />
+      <Folder Include="OCR\Models\" />
+      <Folder Include="OCR\Services\" />
+      <Folder Include="Persistence\Migrations\" />
+      <Folder Include="Realtime\SignalR\Extensions\" />
+      <Folder Include="Realtime\SignalR\Hubs\" />
+      <Folder Include="Realtime\SignalR\Models\" />
+      <Folder Include="Realtime\SignalR\Services\" />
+      <Folder Include="Scraping\Clients\" />
+      <Folder Include="Scraping\Models\" />
+      <Folder Include="Scraping\Services\" />
+      <Folder Include="Security\Encryption\" />
+      <Folder Include="Security\Extension\" />
+      <Folder Include="Security\Hashing\" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Application\Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit" Version="9.1.1" />
+      <PackageReference Include="MassTransit.Abstractions" Version="9.1.1" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="9.1.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="9.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="11.0.0-preview.4.26230.115" />
+      <PackageReference Include="Microsoft.Playwright" Version="1.59.0" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.1" />
+      <PackageReference Include="UglyToad.PdfPig" Version="1.7.0-custom-5" />
     </ItemGroup>
 
 </Project>
